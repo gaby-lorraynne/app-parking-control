@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:  parking-control
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/parking_control_db?createDatabaseIfNotExist=true
+    username: root
+    password: G@by2003
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+        hibernate:
+          format_sql: true
