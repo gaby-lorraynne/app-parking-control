@@ -4,5 +4,8 @@ import com.api.parking_control.adapters.out.persistence.entity.ParkingSpotEntity
 import org.hibernate.validator.constraints.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface ParkSpotRepository extends JpaRepository<ParkingSpotEntity, UUID> {
+    List<ParkingSpotEntity> findByApartment(String apartment);
 }
